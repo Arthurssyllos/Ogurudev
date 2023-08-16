@@ -1,0 +1,67 @@
+.texto_publicacoes{
+    color: white;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-description {
+    margin-top: 10px;
+}
+
+.card-buttons {
+    margin-top: 20px;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-right: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilizando o polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #0dd6cc; /* Cor do polegar */
+    border-radius: 6px; /* Borda arredondada do polegar */
+}
+
+/* Estilizando a parte da barra de rolagem que não é coberta pelo polegar */
+::-webkit-scrollbar-track {
+    background-color: transparent; /* Cor da parte de trás da barra de rolagem */
+}
