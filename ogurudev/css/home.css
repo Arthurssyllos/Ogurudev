@@ -17,12 +17,49 @@
     align-items: center;
 }
 
-.text {
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  background: #111;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-size:2em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  color: white;
+}
+.console-underscore {
+  display:inline-block;
+  top:-0.14em;
+  left:10px;
+}
+
+
+
+
+.logo {
     font-size: 30px;
     margin-bottom: 10px;
     margin-left: 20%;
     color: white;
 }
+
+
+
 .container2 {
     display: flex;
     align-items: center;
@@ -116,7 +153,7 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin-left: 20%;
+    margin-left: 60%;
   }
   .button:hover, .button:focus, .button:active {
     

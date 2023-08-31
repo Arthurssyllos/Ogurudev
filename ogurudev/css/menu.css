@@ -17,6 +17,45 @@ body{
     box-shadow: 0px 4px 6px #0dd6cc; /* Adicionar sombra com a cor desejada */
 }
 
+
+
+.shape1 {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -290;
+    stroke-width: 5px;
+    stroke: #00fffc;
+  }
+
+  .svg-wrapper:hover .shape1 {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
+
+
+
+.shape {
+    fill: transparent;
+    stroke-dasharray: 90 490;
+    stroke-dashoffset: -400;
+    stroke-width: 8px;
+    stroke: #00fffc;
+  }
+
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
+
+  .svg-wrapper {
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 320px;
+  }
+
 .logo_menu {
     max-height: 100px;
 }
@@ -37,6 +76,12 @@ body{
     color: #fff; /* Cor do texto do link */
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -50px;
+    margin-left: 50px;
 }
 
 .link_menu:hover {
@@ -61,3 +106,16 @@ body{
         margin-bottom: 10px; /* Espaçamento entre os itens no modo responsivo */
     }
 }
+
+@keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 5px;
+    }
+  }
